@@ -19,9 +19,16 @@ export default function Component() {
                 template.
               </p>
             </div>
-            <Button asChild className="max-w-fit">
-              <Link href="/signin">Start Now</Link>
-            </Button>
+            <div className="flex gap-4 px-2">
+              <Button asChild className="max-w-fit">
+                <Link href="/signin">Login</Link>
+              </Button>
+              <Button asChild className="max-w-fit" variant={"outline"}>
+                <Link href="https://github.com/Xeven777/nextjs-with-auth-mongo">
+                  Github
+                </Link>
+              </Button>
+            </div>
           </div>
           <Image
             alt="Hero"

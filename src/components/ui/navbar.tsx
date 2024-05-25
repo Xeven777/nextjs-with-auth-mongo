@@ -27,6 +27,12 @@ export default function Navbar() {
           >
             Dashboard
           </Link>
+          <Link
+            href="https://github.com/Xeven777/nextjs-with-auth-mongo"
+            className="text-sm font-medium hover:underline hover:underline-offset-4 transition-all"
+          >
+            Github
+          </Link>
         </nav>
         <div className="flex items-center gap-4">
           <Sheet>
@@ -49,6 +55,12 @@ export default function Navbar() {
                   href="/dashboard"
                 >
                   Dashboard
+                </Link>
+                <Link
+                  href="https://github.com/Xeven777/nextjs-with-auth-mongo"
+                  className="text-sm font-medium hover:underline hover:underline-offset-4 transition-all"
+                >
+                  Github
                 </Link>
               </div>
             </SheetContent>

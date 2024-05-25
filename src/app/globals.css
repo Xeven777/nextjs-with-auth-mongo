@@ -49,8 +49,8 @@
   }
 }
 ::selection {
-  background-color: hsl(var(--primary));
-  color: hsl(var(--primary-foreground));
+  color: hsl(var(--primary));
+  background-color: rgb(223, 223, 223);
 }
 
 ::-webkit-scrollbar {
