@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/navbar";
+import { Toaster } from "sonner";
+import { ThemeProvider } from "next-themes";
 
 const ps = Public_Sans({ subsets: ["latin"] });
 
@@ -19,8 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ps.className + " relative"}>
-        <Navbar />
-        {children}
+        <ThemeProvider attribute="class">
+          <Navbar />
+          {children}
+          <Toaster richColors />
+        </ThemeProvider>
       </body>
     </html>
   );

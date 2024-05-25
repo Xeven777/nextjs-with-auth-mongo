@@ -8,7 +8,7 @@ export default async function SignInPag() {
     <div className="w-full md:grid md:grid-cols-2">
       <div className="flex items-center justify-center py-24 md:py-12">
         <div className="mx-auto grid w-[350px] z-[2] gap-6 bg-background/30 backdrop-blur-md shadow-inner shadow-muted border px-4 py-10 rounded-lg">
-          <h1 className="text-3xl font-bold bg-gradient-to-b dark:from-sky-100 from-slate-700 dark:via-slate-300 to-slate-500 bg-clip-text text-transparent text-center">
+          <h1 className="text-3xl font-bold bg-gradient-to-b from-foreground to-muted-foreground/80  bg-clip-text text-transparent text-center">
             Sign in to <br /> your account
           </h1>
           <form
@@ -24,7 +24,7 @@ export default async function SignInPag() {
               Login with Github <GithubIcon className="ml-2" />
             </Button>
           </form>
-          <div className="size-80 invisible dark:visible -z-[1] rounded-full blur-3xl bg-primary/40 animate-pulse translate-y-10 translate-x-10 absolute" />
+          <div className="size-80 invisible dark:visible -z-[1] rounded-full blur-3xl bg-primary/30 animate-pulse translate-y-10 translate-x-10 absolute" />
         </div>
       </div>
       <div className="hidden bg-muted md:block h-svh">

@@ -4,6 +4,7 @@ import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import { Component, MenuIcon } from "lucide-react";
 import UserDropdown from "./userDropdown";
 import { Suspense } from "react";
+import ThemeTogglebutton from "../ThemeToggle";
 
 export default function Navbar() {
   return (
@@ -52,6 +53,7 @@ export default function Navbar() {
               </div>
             </SheetContent>
           </Sheet>
+          <ThemeTogglebutton />
           <Suspense fallback={"..."}>
             <UserDropdown />
           </Suspense>
