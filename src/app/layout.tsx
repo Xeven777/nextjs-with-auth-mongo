@@ -8,9 +8,16 @@ import { ThemeProvider } from "next-themes";
 const ps = Public_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nextjs-with-auth-mongo.vercel.app/"), // replace it with your Production URL
   title: "Next.js  + Authjs + shadcn + Prisma",
   description:
     "Starter template for Next.js + Authjs + shadcn ui + Prisma Accelerate with MongoDB running at Edge😌⚡",
+  authors: [
+    {
+      name: "Anish Biswas",
+      url: "https://github.com/Xeven777",
+    },
+  ],
 };
 
 export default function RootLayout({
